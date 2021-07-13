@@ -22,15 +22,40 @@
 			<hr>
 		
 
-			<div>
+			<div class="buts">
 			
 					<button><th><a class="buttons" href="C:\Users\Sam\Documents\Uniwork\set08101\adventure\sambolton8.github.io\02.html"> Search the wreckage.</a></th></button>
 					<button><th><a class="buttons" href="F:\Web tech\set08101\set08101\lab 2 Adventure game\Adventure game\08.html"> Walk towards the cave entrance.</a></th></button>
 					<button><th><a class="buttons" href="F:\Web tech\set08101\set08101\lab 2 Adventure game\Adventure game\08.html"> Attempt to climb the sharp cliffs.</a></th></button>	
 			
 			</div>
-
 			
+			<div class="stats">
+				<img src="images/health.png" id="healthIcon"><p id="health"></p>
+				<img src="images/gold.png" id="goldIcon"><p id="gold"></p>
+			</div>
+			
+			<script>
+			var healthvar = 3;
+			var goldvar=0;
+				
+			function healthStat() {
+				if (healthvar <= 4) {
+						document.getElementById("health").style.color = "red";
+						}
+					else {
+						document.getElementById("health").style.color = "green";
+				}
+				return healthvar;		
+			}
+			document.getElementById("health").innerHTML = "Health: " + healthStat() + "/10";
+				
+			function goldStat() {
+				return goldvar;
+			}
+			document.getElementById("gold").innerHTML = "Gold: " + goldStat();
+			
+		</script>
 	</body>
 <html>
 	

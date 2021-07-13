@@ -17,8 +17,7 @@ p {
 	padding-left: 100px;
 	text-align: center;
 }
-
-div {
+.buts {
 	text-align: center;
 }
 
@@ -36,8 +35,36 @@ div {
 	font-size: 20px;
 }
 
-img {
+.Stats {
+	
+}
+
+#Sword {
 	height: 20px;
 	width: 20px;
 	position: absolute; 
+}
+
+#health {
+	text-align: left;
+	padding-top: 27px;
+}
+
+#healthIcon {
+	height: 40px;
+	position: absolute;
+	padding-top: 20px;
+	
+}
+
+#gold {
+	text-align: left;
+	padding-top: 27px;
+	color: orange;
+}
+
+#goldIcon {
+	height: 40px;
+	position: absolute;
+	padding-top: 20px;
 }

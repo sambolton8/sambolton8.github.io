@@ -1,28 +1,61 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<link rel="stylesheet" href="css.css">
 		<title>Adventure Game</title>
-		<p1><center> Choose your own advenure! </center></p1>
+
 	</head>
 	<body>
 		<br> <hr>
-			<p1><center><i>You keep walking, avoiding eye contact.  </i></center></p1>
+			<p>
+				You awake to the sound of seagulls chirping around you. 
+				You find yourself lying on a desolate beach with a sore head, bloody hands and a lingering taste of salt in your mouth.
+				The beach appears small lengthwise but deep. The tall cliffs surrounding you make the cove that you’re in seem isolated.
+				You look around to see your boat dashed into pieces beside you.
+				You also make out that there is a large cave entrance at the top of the cove which looks uninviting… 
+			</p>
+			
+				<p>
+				</p>
 			<hr>
-			<p2> You keep walking keeping a strong gaze at the ground in front of you. As you grow closer to the bakery your anxiety fades and you feel safer. You enter the bakery and see that there is only one more of your favourite donuts left behind the counter. The queue is long and you are afraid the donut will be taken by the time you reach the front. <p2>
-			<hr>
-			<p3><center> <b>What do you do?</b>  </center></p3>
+			<p> <b>What do you do?</b> </p>
 			<hr>
 		
 
-			<table style="width:100%">
-			<tr>
-				<th>1.<a href="F:\Web tech\set08101\set08101\lab 2 Adventure game\Adventure game\04.html"> Join the back of the long line and wait patiently.</a></th>
-				<th>2.<a href="F:\Web tech\set08101\set08101\lab 2 Adventure game\Adventure game\05.html"> Cut in front of the queue.</a></th>
-			</tr>
-			<tr>
-			</tr>
-
+			<div class="buts">
 			
+					<button><th><a class="buttons" href="C:\Users\Sam\Documents\Uniwork\set08101\adventure\sambolton8.github.io\02.html"> Search the wreckage.</a></th></button>
+					<button><th><a class="buttons" href="F:\Web tech\set08101\set08101\lab 2 Adventure game\Adventure game\08.html"> Walk towards the cave entrance.</a></th></button>
+					<button><th><a class="buttons" href="F:\Web tech\set08101\set08101\lab 2 Adventure game\Adventure game\08.html"> Attempt to climb the sharp cliffs.</a></th></button>	
+			
+			</div>
+			
+			<div class="stats">
+				<img src="images/health.png" id="healthIcon"><p id="health"></p>
+				<img src="images/gold.png" id="goldIcon"><p id="gold"></p>
+			</div>
+			
+			<script>
+			var healthvar = 3;
+			var goldvar=0;
+				
+			function healthStat() {
+				if (healthvar <= 4) {
+						document.getElementById("health").style.color = "red";
+						}
+					else {
+						document.getElementById("health").style.color = "green";
+				}
+				return healthvar;		
+			}
+			document.getElementById("health").innerHTML = "Health: " + healthStat() + "/10";
+				
+			function goldStat() {
+				return goldvar;
+			}
+			document.getElementById("gold").innerHTML = "Gold: " + goldStat();
+			
+		</script>
 	</body>
 <html>
 	
