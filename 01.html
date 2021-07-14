@@ -2,7 +2,10 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="css.css">
+		<script src="js.js"></script>
+		<link rel="icon" href="images/gold.png">
 		<title>Adventure Game</title>
+		
 
 	</head>
 	<body>
@@ -24,9 +27,10 @@
 
 			<div class="buts">
 			
-					<button><th><a class="buttons" href="https://sambolton8.github.io/sambolton8.github.io/02.html"> Search the wreckage.</a></th></button>
-					<button><th><a class="buttons" href="F:\Web tech\set08101\set08101\lab 2 Adventure game\Adventure game\08.html"> Walk towards the cave entrance.</a></th></button>
-					<button><th><a class="buttons" href="F:\Web tech\set08101\set08101\lab 2 Adventure game\Adventure game\08.html"> Attempt to climb the sharp cliffs.</a></th></button>	
+					<button a href="#" onclick="searchWreckage();"><th><a class="buttons" id="button1" href="https://sambolton8.github.io/sambolton8.github.io/02.html"> Search the wreckage.</a></a></th></button>
+							
+					<button><th><a class="buttons" id="button2" href="F:\Web tech\set08101\set08101\lab 2 Adventure game\Adventure game\08.html"> Walk towards the cave entrance.</a></th></button>
+					<button><th><a class="buttons" id="button3" href="F:\Web tech\set08101\set08101\lab 2 Adventure game\Adventure game\08.html"> Attempt to climb the sharp cliffs.</a></th></button>	
 			
 			</div>
 			
@@ -35,25 +39,13 @@
 				<img src="images/gold.png" id="goldIcon"><p id="gold"></p>
 			</div>
 			
-			<script>
-			var healthvar = 3;
-			var goldvar=0;
-				
-			function healthStat() {
-				if (healthvar <= 4) {
-						document.getElementById("health").style.color = "red";
-						}
-					else {
-						document.getElementById("health").style.color = "green";
-				}
-				return healthvar;		
-			}
+		<script>
+
 			document.getElementById("health").innerHTML = "Health: " + healthStat() + "/10";
-				
-			function goldStat() {
-				return goldvar;
-			}
-			document.getElementById("gold").innerHTML = "Gold: " + goldStat();
+			document.getElementById("gold").innerHTML = "Gold: " + goldStat();	
+			
+					
+
 			
 		</script>
 	</body>
