@@ -10,11 +10,7 @@
 	<body>
 		<br> <hr>
 			<p>
-				You awake to the sound of seagulls chirping around you. 
-				You find yourself lying on a desolate beach with a sore head, bloody hands and a lingering taste of salt in your mouth.
-				The beach appears small lengthwise but deep. The tall cliffs surrounding you make the cove that you’re in seem isolated.
-				You look around to see your boat dashed into pieces beside you.
-				You also make out that there is a large cave entrance at the top of the cove which looks uninviting… 
+ 
 			</p>
 			
 				<p>
@@ -34,29 +30,14 @@
 			
 			<div class="stats">
 				<img src="images/health.png" id="healthIcon"><p id="health"></p>
-				<img src="images/gold.png" id="goldIcon"><p id="gold"></p>
+<!--				<img src="images/gold.png" id="goldIcon"><p id="gold"></p> -->
 			</div>
 			
 			<script>
-			var healthvar = 3;
-			var goldvar=0;
-				
-			function healthStat() {
-				if (healthvar <= 4) {
-						document.getElementById("health").style.color = "red";
-						}
-					else {
-						document.getElementById("health").style.color = "green";
-				}
-				return healthvar;		
-			}
 			document.getElementById("health").innerHTML = "Health: " + healthStat() + "/10";
-				
-			function goldStat() {
-				return goldvar;
-			}
-			document.getElementById("gold").innerHTML = "Gold: " + goldStat();
 			
+					
+
 		</script>
 	</body>
 <html>
