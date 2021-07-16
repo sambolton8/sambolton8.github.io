@@ -1,8 +1,11 @@
 var healthvar = 3;
 //var goldvar = 0;		
+let hp = sessionStorage.getItem('storedHealth');
+console.log(hp);
 
-	
+
 function healthStat() {
+			
 	if (healthvar <= 4) {
 		document.getElementById("health").style.color = "red";
 			}
@@ -15,15 +18,19 @@ function healthStat() {
 					
 					if (healthvar <= 0){
 						alert("You are dead... Game over!")
-					window.location.href = "index.html";
 					}
-				return healthvar;			
+
+
+				sessionStorage.setItem('storedHealth', healthvar);
+				//return healthvar;	
+				return hp;
 			}
 				
 // function goldStat() {
 //	return goldvar;
 //			}
-	
+
+
 
 function searchWreckage() {
 	alert('You found an apple. [+3 health]');
@@ -32,5 +39,5 @@ function searchWreckage() {
 		
 		document.getElementById("health").innerHTML = "Health: " + healthStat() + "/10";
 //		document.getElementById("gold").innerHTML = "Gold: " + goldStat();	
-		document.getElementById("button1").setAttribute('disabled')
+
 }	
