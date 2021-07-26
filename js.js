@@ -6,7 +6,7 @@ console.log(hp);
 
 function healthStat() {
 	
-sessionStorage.setItem('storedHealth', healthvar);
+localStorage.setItem('storedHealth', healthvar);
 
 	if (healthvar <= 4) {
 		document.getElementById("health").style.color = "red";
@@ -36,7 +36,7 @@ sessionStorage.setItem('storedHealth', healthvar);
 
 function searchWreckage() {
 	alert('You found an apple. [+3 health]');
-		healthvar += 3;
+		hp += 3;
 //		goldvar += 2;
 		
 		document.getElementById("health").innerHTML = "Health: " + healthStat() + "/10";
