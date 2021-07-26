@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="css.css">
+		<script src="js.js"></script>
+		<link rel="icon" href="images/gold.png">
+		<title>Adventure Game</title>
+
+	</head>
+	<body >
+		<br> <hr>
+			<p id="previousAction">
+				You chose the right path...
+			</p>
+			
+				<p>
+				You take a few steps forward and into the darkness. You can't even see your hand before your face. 
+				</p>
+			<hr>
+			<p> <b>Do you want to continue?</b> </p>
+			<hr>
+		
+
+			<div class="buts">
+			
+					<button><th><a class="buttons" href="https://sambolton8.github.io/03.html"> Continue</a></th></button>
+					<button><th><a class="buttons" href="https://sambolton8.github.io/02.html"> Go back</a></th></button>
+			
+			</div>
+			
+			<div class="stats">
+				<img src="images/health.png" id="healthIcon"><p id="health"></p>
+<!--				<img src="images/gold.png" id="goldIcon"><p id="gold"></p> -->
+			</div>
+			
+			<script>
+			gameOver()
+			document.getElementById("health").innerHTML = "Health: " + healthStat() + "/10";
+			
+					
+
+		</script>
+	</body>
+<html>
+	
+	
