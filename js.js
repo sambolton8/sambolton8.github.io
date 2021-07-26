@@ -1,6 +1,6 @@
 var healthvar = 3;
 //var goldvar = 0;		
-var hp = sessionStorage.getItem('storedHealth');
+var hp = localStorage.getItem('storedHealth');
 console.log(hp);
 
 
