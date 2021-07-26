@@ -1,27 +1,42 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<link rel="stylesheet" href="css.css">
+		<script src="js.js"></script>
+		<link rel="icon" href="images/gold.png">
 		<title>Adventure Game</title>
-		<p1><center> Choose your own advenure! </center></p1>
+		
+
 	</head>
 	<body>
 		<br> <hr>
-			<p1><center><i> You cross the road.  </i></center></p1>
+			<p id="previousAction">
+				You attempt to climb the sharp rocks.
+			</p>
+			
+				<p>
+				Your hands are still in pain from the wreck and the rocks are slippery. You slip and hit your head. (Game over)
+				</p>
 			<hr>
-			<p2> <center> You cross the road quickly without looking both ways. You get hit by a speeding car. <center> <p2>
-			<hr>
-			<p3><center> <b>You lose!</b>  </center></p3>
+			<p> <b>You died...</b> </p>
 			<hr>
 		
 
-			<table style="width:100%">
-			<tr>
-				<th>1.<a href="F:\Web tech\set08101\set08101\lab 2 Adventure game\Adventure game\index.html"> Start over.</a></th>
-			</tr>
-			<tr>
-			</tr>
-
+			<div class="buts">
 			
+			</div>
+			
+			<div class="stats">
+				<img src="images/health.png" id="healthIcon"><p id="health"></p>
+
+			</div>
+			
+		<script>
+			fallDeath();
+			document.getElementById("health").innerHTML = "Health: " + healthStat() + "/10";
+//			document.getElementById("gold").innerHTML = "Gold: " + goldStat();	
+		
+		</script>
 	</body>
 <html>
 	

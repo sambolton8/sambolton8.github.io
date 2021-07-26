@@ -7,24 +7,24 @@
 		<title>Adventure Game</title>
 
 	</head>
-	<body>
+	<body >
 		<br> <hr>
-			<p>
- 
+			<p id="previousAction">
+				You walked towards the cave...
 			</p>
 			
 				<p>
+				You enter the dark, open cave. You look around and see that the path splits off in two directions...
 				</p>
 			<hr>
-			<p> <b>What do you do?</b> </p>
+			<p> <b>Which path do you follow?</b> </p>
 			<hr>
 		
 
 			<div class="buts">
 			
-					<button><th><a class="buttons" href="https://sambolton8.github.io/02.html"> Search the wreckage.</a></th></button>
-					<button><th><a class="buttons" href="F:\Web tech\set08101\set08101\lab 2 Adventure game\Adventure game\08.html"> Walk towards the cave entrance.</a></th></button>
-					<button><th><a class="buttons" href="F:\Web tech\set08101\set08101\lab 2 Adventure game\Adventure game\08.html"> Attempt to climb the sharp cliffs.</a></th></button>	
+					<button><th><a class="buttons" href="03.html"> Left</a></th></button>
+					<button><th><a class="buttons" href="04.html"> Right</a></th></button>
 			
 			</div>
 			
@@ -34,6 +34,7 @@
 			</div>
 			
 			<script>
+			gameOver()
 			document.getElementById("health").innerHTML = "Health: " + healthStat() + "/10";
 			
 					

@@ -10,15 +10,12 @@
 	</head>
 	<body>
 		<br> <hr>
-			<p>
-				You awake to the sound of seagulls chirping around you. 
-				You find yourself lying on a desolate beach with a sore head, bloody hands and a lingering taste of salt in your mouth.
-				The beach appears small lengthwise but deep. The tall cliffs surrounding you make the cove that you’re in seem isolated.
-				You look around to see your boat dashed into pieces beside you.
-				You also make out that there is a large cave entrance at the top of the cove which looks uninviting… 
+			<p id="previousAction">
+				You search the wreckage and find some food...
 			</p>
 			
 				<p>
+					You are surrounded by tall cliffs and you see a large cave opening not far from where you're standing.
 				</p>
 			<hr>
 			<p> <b>What do you do?</b> </p>
@@ -27,7 +24,7 @@
 
 			<div class="buts">
 			
-					<button a href="#" onclick="searchWreckage();"><th><a class="buttons" id="button1" href="01searchwreckage.html">Search the wreckage.</a></a></th></button>							
+							
 					<button><th><a class="buttons" id="button2" href="02.html"> Walk towards the cave entrance.</a></th></button>
 					<button><th><a class="buttons" id="button3" href="03.html"> Attempt to climb the sharp cliffs.</a></th></button>	
 			
@@ -42,7 +39,7 @@
 			
 			document.getElementById("health").innerHTML = "Health: " + healthStat() + "/10";
 //			document.getElementById("gold").innerHTML = "Gold: " + goldStat();	
-		
+
 		</script>
 	</body>
 <html>

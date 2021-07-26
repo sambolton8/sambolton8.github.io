@@ -17,6 +17,17 @@ p {
 	padding-left: 100px;
 	text-align: center;
 }
+
+#previousAction {
+	font-family: sans-serif;
+	font-size: 15px;
+	padding-right: 100px;
+	padding-left: 100px;
+	text-align: center;
+	color: gray;
+	font-style: italic;
+}
+
 .buts {
 	text-align: center;
 }
