@@ -10,7 +10,7 @@ function healthStat() {
 
 	localStorage.getItem('storedHealth');
 
-//	alert(typeof hp)
+	//alert(typeof hp)
 	if (hp <= 4) {
 		document.getElementById("health").style.color = "red";
 			}
@@ -51,8 +51,9 @@ function searchWreckage() {
 function gameOver() {
 	if (hp <= 0) {
 		confirm("You are dead... \nGame Over!");
-		window.location.href = "https://sambolton8.github.io";	
+		window.location.href = "index.html";	
 		localStorage.clear();
+		localStorage.setItem('storedHealth', healthvar);
 	}		
 }
 
