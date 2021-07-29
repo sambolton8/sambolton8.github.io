@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="css.css">
+		<script src="js.js"></script>
+		<link rel="icon" href="images/gold.png">
+		<title>Adventure Game</title>
+
+	</head>
+	<body >
+		<br> <hr>
+			<p id="previousAction">
+				You try to sneak attack the beast...
+			</p>
+			
+				<p>
+					You sneak up on the beast and try to attack it. The beast awakans and slashes you...
+				</p>
+			<hr>
+			<p> <b>What do you do?</b> </p>
+			<hr>
+		
+
+			<div class="buts">
+			
+					<button><th><a class="buttons" onClick="run()";> Run <i>(10%)</i></a></th></button>			
+			</div>
+			
+			<div class="stats">
+				<img src="images/health.png" id="healthIcon"><p id="health"></p>
+<!--				<img src="images/gold.png" id="goldIcon"><p id="gold"></p> -->
+			</div>
+			
+			<div id="itemsDiv">
+				<img src="images/sword.png" id="swordIcon"><p id="sword">Short sword</p> 
+			</div>
+			
+			<script>
+			gameOver()
+			document.getElementById("health").innerHTML = "Health: " + healthStat() + "/10";
+			hasSword();
+					
+
+		</script>
+	</body>
+<html>
+	
+	

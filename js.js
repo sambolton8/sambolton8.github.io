@@ -130,7 +130,7 @@ function sneakAttack() {
 	var sneakRandom = Math.floor(Math.random() * 10) + 1;
 	if (sneakRandom > 1) {
 	localStorage.setItem('storedHealth', hp -= 100);
-		window.location.href = "10sneakAttack.html"
+		window.location.href = "10sneakAttackF.html"
 	}	else {
 		window.location.href = "10sneakAttack.html"
 	}
