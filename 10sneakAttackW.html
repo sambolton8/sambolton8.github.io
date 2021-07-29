@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="css.css">
+		<script src="js.js"></script>
+		<link rel="icon" href="images/gold.png">
+		<title>Adventure Game</title>
+
+	</head>
+	<body >
+		<br> <hr>
+			<p id="previousAction">
+				You continue on...
+			</p>
+			
+				<p>
+				Eventually the tunnel narrows to a crawl space. You peek through and see the cave widen to a large chasm with what looks to be some sort of escape on the other side. As you steady your breathing you hear a deep panting. You make sure to silently turn off your torch. You quietly try crawling through the hole into the open chasm. You look around you and see the floor littered with bones. You see a dark shadow in the corner. It looks like a faint outline of what the man was describing. It sniffs and begins to wake up...
+
+				</p>
+			<hr>
+			<p> <b>What do you do?</b> </p>
+			<hr>
+		
+
+			<div class="buts">
+			
+					<button><th><a class="buttons" href="10sneakPast.html"> Try to sneak through</a></th></button>
+					<button><th><a class="buttons" href="10sneakAttack.html"> Try a sneak attack <i>(10%)</i></a></th></button>			
+			</div>
+			
+			<div class="stats">
+				<img src="images/health.png" id="healthIcon"><p id="health"></p>
+<!--				<img src="images/gold.png" id="goldIcon"><p id="gold"></p> -->
+			</div>
+			
+			<div id="itemsDiv">
+				<img src="images/sword.png" id="swordIcon"><p id="sword">Short sword</p> 
+			</div>
+			
+			<script>
+			gameOver()
+			document.getElementById("health").innerHTML = "Health: " + healthStat() + "/10";
+			hasSword();
+					
+
+		</script>
+	</body>
+<html>
+	
+	

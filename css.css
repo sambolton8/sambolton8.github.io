@@ -47,8 +47,11 @@ p {
 	color: black;
 }
 
-.Stats {
-	
+
+.cave{
+	text-align: center;
+	padding-top: 30px;
+
 }
 
 #Sword {
@@ -69,13 +72,13 @@ p {
 	
 }
 
-#gold {
+#sword {
 	text-align: left;
 	padding-top: 27px;
 	color: orange;
 }
 
-#goldIcon {
+#swordIcon {
 	height: 40px;
 	position: absolute;
 	padding-top: 20px;

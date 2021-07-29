@@ -10,11 +10,12 @@
 	<body >
 		<br> <hr>
 			<p id="previousAction">
-				You walked towards the cave...
+				You ask the strange man who he is...
 			</p>
 			
 				<p>
-				The dimly lit path leads on to a large hole in the ground with a small ledge alongside it. It’s about 6 feet long so there’s a chance you could jump it…
+				I have been living in these caves for almost a year now. Ever since the lighthouse collapsed in the dreadful storm we had I’ve had no other place to go to shelter from the wind and rain. I fish and I survive but I cannot exit the other side of these caves…
+
 				</p>
 			<hr>
 			<p> <b>What do you do?</b> </p>
@@ -23,9 +24,9 @@
 
 			<div class="buts">
 			
-					<button><th><a class="buttons" href="05shimmy.html"> Shimmy along the ledge</a></th></button>
-					<button><th><a class="buttons" onclick ="jumpHealthLoss();" href="05jumpedIt.html"> Jump it</a></th></button>
-					<button><th><a class="buttons" href="02foundTorch.html"> Turn back</a></th></button>
+					<button><th><a class="buttons" onClick= "spareFish();" href="07spareFood.html"> "Do you have any spare food?"</a></th></button>
+					<button><th><a class="buttons" href="06why.html"> "Why not?"</a></th></button>
+					<button><th><a class="buttons" href="07alone.html"> Ignore him and continue.</a></th></button>
 			
 			</div>
 			
@@ -35,7 +36,7 @@
 			</div>
 			
 			<script>
-			gameOver()
+			gameOver();
 			document.getElementById("health").innerHTML = "Health: " + healthStat() + "/10";
 			
 					

@@ -10,11 +10,11 @@
 	<body >
 		<br> <hr>
 			<p id="previousAction">
-				You walked towards the cave...
+				You throw a swift punch to the old man and knock him out...
 			</p>
 			
 				<p>
-				The dimly lit path leads on to a large hole in the ground with a small ledge alongside it. It’s about 6 feet long so there’s a chance you could jump it…
+				While the man is unconcious you search his sack of supplies. You manage to find two full fish and a short sword next to his bed. You take it all and continue on.
 				</p>
 			<hr>
 			<p> <b>What do you do?</b> </p>
@@ -23,21 +23,25 @@
 
 			<div class="buts">
 			
-					<button><th><a class="buttons" href="05shimmy.html"> Shimmy along the ledge</a></th></button>
-					<button><th><a class="buttons" onclick ="jumpHealthLoss();" href="05jumpedIt.html"> Jump it</a></th></button>
-					<button><th><a class="buttons" href="02foundTorch.html"> Turn back</a></th></button>
+					<button><th><a class="buttons" href="09.html"> Continue</a></th></button>
+
 			
 			</div>
 			
 			<div class="stats">
 				<img src="images/health.png" id="healthIcon"><p id="health"></p>
-<!--				<img src="images/gold.png" id="goldIcon"><p id="gold"></p> -->
+
+			</div>
+			
+			<div id="itemsDiv">
+				<img src="images/sword.png" id="swordIcon"><p id="sword">Short sword</p> 
 			</div>
 			
 			<script>
-			gameOver()
+			fullHealth();
+			gameOver();
 			document.getElementById("health").innerHTML = "Health: " + healthStat() + "/10";
-			
+			hasSword();
 					
 
 		</script>

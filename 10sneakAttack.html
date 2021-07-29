@@ -10,23 +10,20 @@
 	<body >
 		<br> <hr>
 			<p id="previousAction">
-				You walked towards the cave...
+				You try to sneak attack the monster...
 			</p>
 			
 				<p>
-				The dimly lit path leads on to a large hole in the ground with a small ledge alongside it. It’s about 6 feet long so there’s a chance you could jump it…
+				You walk slowly up to the beast while it sleeps. It's breathing is heavy and you can barely stand the stench. As you draw closer you drive your sword into it's throat. It thrashes and panicks. Meanwhile you bolt towards the exit while the monster is struggling.
 				</p>
 			<hr>
-			<p> <b>What do you do?</b> </p>
+			<p> <b>...</b> </p>
 			<hr>
 		
 
 			<div class="buts">
 			
-					<button><th><a class="buttons" href="05shimmy.html"> Shimmy along the ledge</a></th></button>
-					<button><th><a class="buttons" onclick ="jumpHealthLoss();" href="05jumpedIt.html"> Jump it</a></th></button>
-					<button><th><a class="buttons" href="02foundTorch.html"> Turn back</a></th></button>
-			
+					<button><th><a class="buttons" href="exit.html"> Continue</a></th></button>
 			</div>
 			
 			<div class="stats">
@@ -34,10 +31,14 @@
 <!--				<img src="images/gold.png" id="goldIcon"><p id="gold"></p> -->
 			</div>
 			
+			<div id="itemsDiv">
+				<img src="images/sword.png" id="swordIcon"><p id="sword">Short sword</p> 
+			</div>
+			
 			<script>
 			gameOver()
 			document.getElementById("health").innerHTML = "Health: " + healthStat() + "/10";
-			
+			hasSword();
 					
 
 		</script>

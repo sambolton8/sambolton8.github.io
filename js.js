@@ -2,8 +2,10 @@ var healthvar = 3;
 //var goldvar = 0;	
 
 var hp = parseInt(localStorage.getItem('storedHealth'), 10);
-
+var sword = parseInt(sessionStorage.getItem('haveSword'), 10);
 console.log(hp);
+console.log(sword);
+
 
 
 function healthStat() {
@@ -38,10 +40,9 @@ function healthStat() {
 
 function searchWreckage() {
 	alert('You found an apple. [+3 health]');
-		localStorage.setItem('storedHealth', healthvar += 3);
+		localStorage.setItem('storedHealth', hp += 3);
 //		goldvar += 2;
 		
-		//return hp;
 		
 		document.getElementById("health").innerHTML = "Health: " + healthStat() + "/10";
 //		document.getElementById("gold").innerHTML = "Gold: " + goldStat();	
@@ -58,6 +59,107 @@ function gameOver() {
 }
 
 function fallDeath() {
-	hp -= 100;
+	hp -= 1000;
 	onload = gameOver();
+}
+
+function resetHealth() {
+		localStorage.clear();
+		localStorage.setItem('storedHealth', healthvar);
+}
+
+function jumpHealthLoss() {
+	localStorage.setItem('storedHealth', hp -= 1);
+}
+
+function fullHealth() {
+	localStorage.setItem('storedHealth', hp += 10);
+	sword = true;
+}
+
+function spareFish() {
+	localStorage.setItem('storedHealth', hp += 2);
+}
+
+
+function hasSword() {
+	sessionStorage.setItem('haveSword', 0);
+	var items = document.getElementById("itemsDiv");
+	if (sword === false){
+		items.style.display = "none";
+	}
+}
+
+function dive() {
+	var diveRandom = Math.floor(Math.random() * 10) + 1;
+	if (diveRandom > 8) {
+	localStorage.setItem('storedHealth', hp -= 5);
+	window.location.href = "11diveF.html";	
+	
+
+	}	else{
+		window.location.href = "11diveW.html";
+	}
+}
+
+function throwBone() {
+	var throwRandom = Math.floor(Math.random() * 10) + 1;
+	if (throwRandom > 2) {
+	localStorage.setItem('storedHealth', hp -= 1);
+	window.location.href = "11throwBoneF.html";	
+	
+
+	}	else{
+		window.location.href = "11throwBoneW.html";
+	}
+}
+
+function slash() {
+	var slashRandom = Math.floor(Math.random() * 10) + 1;
+	if (slashRandom > 2) {
+	window.location.href = "12slashF.html";	
+	localStorage.setItem('storedHealth', hp -= 4);
+
+
+	}	else{
+		window.location.href = "12slashW.html";
+	}
+}
+
+function sneakAttack() {
+	var sneakRandom = Math.floor(Math.random() * 10) + 1;
+	if (sneakRandom > 1) {
+	localStorage.setItem('storedHealth', hp -= 100);	
+	
+	}
+}
+
+function run() {
+	var runRandom = Math.floor(Math.random() * 10) + 1;
+	if (runRandom > 3) {
+	localStorage.setItem('storedHealth', hp -= 100);
+			window.location.href = "13runF.html";
+	}	else {
+		window.location.href = "13runW.html";
+	}
+}
+
+function run2() {
+	var run2Random = Math.floor(Math.random() * 10) + 1;
+	if (run2Random > 7) {
+	localStorage.setItem('storedHealth', hp -= 100);
+			window.location.href = "13runF.html";
+	}	else {
+		window.location.href = "13runW.html";
+	}
+}
+
+function stab() {
+	var stabRandom = Math.floor(Math.random() * 10) + 1;
+	if (stabRandom > 3) {
+	localStorage.setItem('storedHealth', hp -= 10);	
+			window.location.href = "12stabF.html";
+	}	else {
+		window.location.href = "12stabW.html";
+	}
 }
