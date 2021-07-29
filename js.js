@@ -12,7 +12,6 @@ function healthStat() {
 
 	localStorage.getItem('storedHealth');
 
-	//alert(typeof hp)
 	if (hp <= 4) {
 		document.getElementById("health").style.color = "red";
 			}
@@ -32,27 +31,23 @@ function healthStat() {
 			
 			}
 				
-// function goldStat() {
-//	return goldvar;
-//			}
-
 
 
 function searchWreckage() {
 	alert('You found an apple. [+3 health]');
 		localStorage.setItem('storedHealth', hp += 3);
-//		goldvar += 2;
+
 		
 		
 		document.getElementById("health").innerHTML = "Health: " + healthStat() + "/10";
-//		document.getElementById("gold").innerHTML = "Gold: " + goldStat();	
+
 
 }	
 
 function gameOver() {
 	if (hp <= 0) {
 		confirm("You are dead... \nGame Over!");
-		window.location.href = "index.html";	
+		window.location.href = "https://sambolton8.github.io/index.html";	
 		localStorage.clear();
 		localStorage.setItem('storedHealth', healthvar);
 	}		
@@ -94,35 +89,35 @@ function dive() {
 	var diveRandom = Math.floor(Math.random() * 10) + 1;
 	if (diveRandom > 8) {
 	localStorage.setItem('storedHealth', hp -= 5);
-	window.location.href = "11diveF.html";	
+	window.location.href = "https://sambolton8.github.io/11diveF.html";	
 	
 
 	}	else{
-		window.location.href = "11diveW.html";
+		window.location.href = "https://sambolton8.github.io/11diveW.html";
 	}
 }
 
 function throwBone() {
 	var throwRandom = Math.floor(Math.random() * 10) + 1;
 	if (throwRandom > 2) {
-	localStorage.setItem('storedHealth', hp -= 1);
-	window.location.href = "11throwBoneF.html";	
+	localStorage.setItem('storedHealth', hp -= 3);
+	window.location.href = "https://sambolton8.github.io/11throwBoneF.html";	
 	
 
 	}	else{
-		window.location.href = "11throwBoneW.html";
+		window.location.href = "https://sambolton8.github.io/11throwBoneW.html";
 	}
 }
 
 function slash() {
 	var slashRandom = Math.floor(Math.random() * 10) + 1;
 	if (slashRandom > 2) {
-	window.location.href = "12slashF.html";	
+	window.location.href = "https://sambolton8.github.io/12slashF.html";	
 	localStorage.setItem('storedHealth', hp -= 4);
 
 
 	}	else{
-		window.location.href = "12slashW.html";
+		window.location.href = "https://sambolton8.github.io/12slashW.html";
 	}
 }
 
@@ -130,9 +125,9 @@ function sneakAttack() {
 	var sneakRandom = Math.floor(Math.random() * 10) + 1;
 	if (sneakRandom > 1) {
 	localStorage.setItem('storedHealth', hp -= 100);
-		window.location.href = "10sneakAttackF.html"
+		window.location.href = "https://sambolton8.github.io/10sneakAttackF.html"
 	}	else {
-		window.location.href = "10sneakAttack.html"
+		window.location.href = "https://sambolton8.github.io/10sneakAttack.html"
 	}
 }
 
@@ -140,9 +135,9 @@ function run() {
 	var runRandom = Math.floor(Math.random() * 10) + 1;
 	if (runRandom > 3) {
 	localStorage.setItem('storedHealth', hp -= 100);
-			window.location.href = "13runF.html";
+			window.location.href = "https://sambolton8.github.io/13runF.html";
 	}	else {
-		window.location.href = "13runW.html";
+		window.location.href = "https://sambolton8.github.io/13runW.html";
 	}
 }
 
@@ -150,9 +145,9 @@ function run2() {
 	var run2Random = Math.floor(Math.random() * 10) + 1;
 	if (run2Random > 7) {
 	localStorage.setItem('storedHealth', hp -= 100);
-			window.location.href = "13runF.html";
+			window.location.href = "https://sambolton8.github.io/13runF.html";
 	}	else {
-		window.location.href = "13runW.html";
+		window.location.href = "https://sambolton8.github.io/13runW.html";
 	}
 }
 
@@ -160,8 +155,8 @@ function stab() {
 	var stabRandom = Math.floor(Math.random() * 10) + 1;
 	if (stabRandom > 3) {
 	localStorage.setItem('storedHealth', hp -= 10);	
-			window.location.href = "12stabF.html";
+			window.location.href = "https://sambolton8.github.io/12stabF.html";
 	}	else {
-		window.location.href = "12stabW.html";
+		window.location.href = "https://sambolton8.github.io/12stabW.html";
 	}
 }
