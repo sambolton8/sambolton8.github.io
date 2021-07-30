@@ -5,7 +5,6 @@ var hp = parseInt(localStorage.getItem('storedHealth'), 10);
 var sword = parseInt(sessionStorage.getItem('haveSword'), 10);
 
 console.log(hp);
-alert(typeof(hp));
 
 // Changes the health text colour based on how much health is available.
 // Stops the health counter from exceeding 10 or going below 0.
