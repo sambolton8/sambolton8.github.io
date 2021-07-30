@@ -11,6 +11,7 @@ alert(typeof(hp));
 // Stops the health counter from exceeding 10 or going below 0.
 function healthStat() {
 
+	localStorage.setItem('storedHealth', healthvar);
 	// Obtains the current health value.
 	localStorage.getItem('storedHealth');
 
