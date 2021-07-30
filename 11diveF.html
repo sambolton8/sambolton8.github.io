@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 	<head>
+	
+		<!-- Links the Javascript and css stylesheet. -->
+		<!-- Adds a small coin icon to the browser tab. -->
 		<link rel="stylesheet" href="css.css">
 		<script src="js.js"></script>
 		<link rel="icon" href="images/gold.png">
@@ -9,33 +12,38 @@
 	</head>
 	<body >
 		<br> <hr>
+		
+			<!-- Displays the previous action text at the top. -->
 			<p id="previousAction">
 				You try to dive out of the way...
 			</p>
 			
+				<!-- Main body of text -->
 				<p>
 			You dive to one side and take a deep scratch from the beast's sharp claws.
 				</p>
+				
 			<hr>
 			<p> <b>What do you do?</b> </p>
 			<hr>
 		
-
+			<!-- Displays the buttons. -->
 			<div class="buts">
-			
 					<button><th><a class="buttons" onClick="slash();"> Slash the beast's leg <i>(80%)</i> </a></th></button>
 					<button><th><a class="buttons" onClick="stab();"> Try to stab the beast <i>(30%)</i> </a></th></button>			
 			</div>
 			
+			<!-- Displays the health counter alongside a health icon. -->
 			<div class="stats">
 				<img src="images/health.png" id="healthIcon"><p id="health"></p>
-<!--				<img src="images/gold.png" id="goldIcon"><p id="gold"></p> -->
 			</div>
 			
+			<!-- Displays your sword. -->
 			<div id="itemsDiv">
 				<img src="images/sword.png" id="swordIcon"><p id="sword">Short sword</p> 
 			</div>
 			
+			<!-- Calls the functions that allow the player to view their current health and sword. The gameOver() function is also called to stop the game if the player's health drops below 0. -->
 			<script>
 			gameOver()
 			document.getElementById("health").innerHTML = "Health: " + healthStat() + "/10";

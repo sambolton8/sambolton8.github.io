@@ -6,42 +6,48 @@
 		<link rel="icon" href="images/gold.png">
 		<title>Adventure Game</title>
 
+
+	<!-- Links the Javascript and css stylesheet. -->
+	<!-- Adds a small coin icon to the browser tab. -->
 	</head>
 	<body >
 		<br> <hr>
+		
+			<!-- Displays the previous action text at the top. -->
 			<p id="previousAction">
 				You continue on...
 			</p>
 			
+				<!-- Main body of text -->
 				<p>
 				Eventually the tunnel narrows to a crawl space. You peek through and see the cave widen to a large chasm with what looks to be some sort of escape on the other side. As you steady your breathing you hear a deep panting. You make sure to silently turn off your torch. You quietly try crawling through the hole into the open chasm. You look around you and see the floor littered with bones. You see a dark shadow in the corner. It looks like a faint outline of what the man was describing. It sniffs and begins to wake up...
-
 				</p>
+				
 			<hr>
 			<p> <b>What do you do?</b> </p>
 			<hr>
 		
-
+			<!-- Displays the buttons. -->
 			<div class="buts">
-			
 					<button><th><a class="buttons" href="https://sambolton8.github.io/10sneakPast.html"> Try to sneak through</a></th></button>
 					<button><th><a class="buttons" onClick="sneakAttack();" > Try a sneak attack <i>(10%)</i></a></th></button>			
 			</div>
 			
+			<!-- Displays the health counter alongside a health icon. -->
 			<div class="stats">
 				<img src="images/health.png" id="healthIcon"><p id="health"></p>
-<!--				<img src="images/gold.png" id="goldIcon"><p id="gold"></p> -->
 			</div>
 			
+			<!-- Displays your sword. -->
 			<div id="itemsDiv">
 				<img src="images/sword.png" id="swordIcon"><p id="sword">Short sword</p> 
 			</div>
 			
+			<!-- Calls the functions that allow the player to view their current health and sword. The gameOver() function is also called to stop the game if the player's health drops below 0. -->
 			<script>
 			gameOver()
 			document.getElementById("health").innerHTML = "Health: " + healthStat() + "/10";
-			hasSword();
-					
+			hasSword();				
 
 		</script>
 	</body>

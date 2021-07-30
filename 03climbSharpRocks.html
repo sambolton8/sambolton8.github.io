@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 	<head>
+	
+		<!-- Links the Javascript and css stylesheet. -->
+		<!-- Adds a small coin icon to the browser tab. -->
 		<link rel="stylesheet" href="css.css">
 		<script src="js.js"></script>
 		<link rel="icon" href="images/gold.png">
@@ -10,31 +13,34 @@
 	</head>
 	<body>
 		<br> <hr>
+		
+			<!-- Displays the previous action text at the top. -->
 			<p id="previousAction">
 				You attempt to climb the sharp rocks.
 			</p>
 			
+				<!-- Main body of text -->
 				<p>
-				Your hands are still in pain from the wreck and the rocks are slippery. You slip and hit your head. (Game over)
+					Your hands are still in pain from the wreck and the rocks are slippery. You slip and hit your head. (Game over)
 				</p>
+				
 			<hr>
 			<p> <b>You died...</b> </p>
 			<hr>
 		
-
+			<!-- Displays the buttons. -->
 			<div class="buts">
-			
 			</div>
 			
+			<!-- Displays the health counter alongside a health icon. -->
 			<div class="stats">
 				<img src="images/health.png" id="healthIcon"><p id="health"></p>
-
 			</div>
 			
+		<!-- Calls the functions that allow the player to view their current health. Calls the function to cause the player to die from falling.-->
 		<script>
 			fallDeath();
 			document.getElementById("health").innerHTML = "Health: " + healthStat() + "/10";
-//			document.getElementById("gold").innerHTML = "Gold: " + goldStat();	
 		
 		</script>
 	</body>

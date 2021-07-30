@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 	<head>
+	
+		<!-- Links the Javascript and css stylesheet. -->
+		<!-- Adds a small coin icon to the browser tab. -->
 		<link rel="stylesheet" href="css.css">
 		<script src="js.js"></script>
 		<link rel="icon" href="images/gold.png">
@@ -9,40 +12,42 @@
 	</head>
 	<body >
 		<br> <hr>
+
+			<!-- Displays the previous action text at the top. -->
 			<p id="previousAction">
 				You throw a swift punch to the old man and knock him out...
 			</p>
 			
+				<!-- Main body of text -->
 				<p>
-				While the man is unconcious you search his sack of supplies. You manage to find two full fish and a short sword next to his bed. You take it all and continue on.
+					While the man is unconcious you search his sack of supplies. You manage to find two full fish and a short sword next to his bed. You take it all and continue on.
 				</p>
+				
 			<hr>
 			<p> <b>What do you do?</b> </p>
 			<hr>
 		
-
+			<!-- Displays the buttons. -->
 			<div class="buts">
-			
 					<button><th><a class="buttons" href="https://sambolton8.github.io/09.html"> Continue</a></th></button>
-
-			
 			</div>
 			
+			<!-- Displays the health counter alongside a health icon. -->	
 			<div class="stats">
 				<img src="images/health.png" id="healthIcon"><p id="health"></p>
-
 			</div>
 			
+			<!-- Displays your sword. -->
 			<div id="itemsDiv">
 				<img src="images/sword.png" id="swordIcon"><p id="sword">Short sword</p> 
 			</div>
 			
+			<!-- Calls the functions that allow the player to view their current health and sword. The gameOver() function is also called to stop the game if the player's health drops below 0. -->
 			<script>
 			fullHealth();
 			gameOver();
 			document.getElementById("health").innerHTML = "Health: " + healthStat() + "/10";
-			hasSword();
-					
+			hasSword();				
 
 		</script>
 	</body>

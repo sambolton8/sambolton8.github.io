@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 	<head>
+	
+		<!-- Links the Javascript and css stylesheet. -->
+		<!-- Adds a small coin icon to the browser tab. -->
 		<link rel="stylesheet" href="css.css">
 		<script src="js.js"></script>
 		<link rel="icon" href="images/gold.png">
@@ -9,35 +12,38 @@
 	</head>
 	<body >
 		<br> <hr>
+		
+			<!-- Displays the previous action text at the top. -->
 			<p id="previousAction">
 				You ask how we can get past the monster...
 			</p>
 			
+				<!-- Main body of text -->
 				<p>
-I’m not sure… exactly. My thoughts were that we take a shot at climbing those rocks together in the cove. Maybe we could even try to scrap together some rope from seaweed now that you’re here to help. I’m not sure there's any way of getting past it though. Unless of course you want to try and kill it, in which case you're on your own.
+					I’m not sure… exactly. My thoughts were that we take a shot at climbing those rocks together in the cove. Maybe we could even try to scrap together some rope from seaweed now that you’re here to help. I’m not sure there's any way of getting past it though. Unless of course you want to try and kill it, in which case you're on your own.
 				</p>
+				
 			<hr>
 			<p> <b>What do you do?</b> </p>
 			<hr>
 		
-
+			<!-- Displays the buttons. -->
 			<div class="buts">
-			
 					<button><th><a class="buttons" href="https://sambolton8.github.io/07alone.html"> Carry on alone</a></th></button>
 					<button><th><a class="buttons" href="https://sambolton8.github.io/03climbSharpRocks.html"> Try the rocks</a></th></button>
 					<button><th><a class="buttons" href="https://sambolton8.github.io/07punch.html"> Punch the old man and take his fish</a></th></button>							
 			</div>
 			
+			
+			<!-- Displays the health counter alongside a health icon. -->
 			<div class="stats">
 				<img src="images/health.png" id="healthIcon"><p id="health"></p>
-<!--				<img src="images/gold.png" id="goldIcon"><p id="gold"></p> -->
 			</div>
 			
+			<!-- Calls the functions that allow the player to view their current health and sword. The gameOver() function is also called to stop the game if the player's health drops below 0. -->	
 			<script>
 			gameOver();
-			document.getElementById("health").innerHTML = "Health: " + healthStat() + "/10";
-			
-					
+			document.getElementById("health").innerHTML = "Health: " + healthStat() + "/10";			
 
 		</script>
 	</body>

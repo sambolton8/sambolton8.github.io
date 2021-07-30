@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 	<head>
+	
+		<!-- Links the Javascript and css stylesheet. -->
+		<!-- Adds a small coin icon to the browser tab. -->
 		<link rel="stylesheet" href="css.css">
 		<script src="js.js"></script>
 		<link rel="icon" href="images/gold.png">
@@ -10,41 +13,41 @@
 	</head>
 	<body>
 		<br> <hr>
+				
+			<!-- Displays the previous action text at the top. -->
 			<p id="previousAction">
 				You search the wreckage and find some food...
 			</p>
 			
+				<!-- Main body of text -->
 				<p>
 					You are surrounded by tall cliffs and you see a large cave opening not far from where you're standing.
 				</p>
+				
 			<hr>
 			<p> <b>What do you do?</b> </p>
 			<hr>
 		
-
+			<!-- Displays the buttons. -->
 			<div class="buts">
-			
-							
 					<button><th><a class="buttons" id="button2" href="https://sambolton8.github.io/02.html"> Walk towards the cave entrance.</a></th></button>
 					<button><th><a class="buttons" id="button3" href="https://sambolton8.github.io/03climbSharpRocks.html"> Attempt to climb the sharp cliffs.</a></th></button>	
-			
 			</div>
 			
+			<!-- Displays a picture of a cave entrance. -->
 			<div class="cave">
 				<img src="images/caveEntrance.png" id="caveEntrance">
 			</div>
 			
-			
+			<!-- Displays the health counter alongside a health icon. -->
 			<div class="stats">
 				<img src="images/health.png" id="healthIcon"><p id="health"></p>
-
 			</div>
-			
+				
+				<!-- Calls the functions that allow the player to view their current health. -->	
 		<script>
-
 			document.getElementById("health").innerHTML = "Health: " + healthStat() + "/10";
-//			document.getElementById("gold").innerHTML = "Gold: " + goldStat();	
-
+			
 		</script>
 	</body>
 <html>

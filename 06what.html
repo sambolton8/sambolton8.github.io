@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 	<head>
+	
+		<!-- Links the Javascript and css stylesheet. -->
+		<!-- Adds a small coin icon to the browser tab. -->
 		<link rel="stylesheet" href="css.css">
 		<script src="js.js"></script>
 		<link rel="icon" href="images/gold.png">
@@ -9,35 +12,35 @@
 	</head>
 	<body >
 		<br> <hr>
+		
+			<!-- Displays the previous action text at the top. -->
 			<p id="previousAction">
 				You ask what it is...
 			</p>
 			
+				<!-- Main body of text -->
 				<p>
-			I’ve only ever seen it once while it was sleeping… It was dark but I could see it’s outline. He’s about twice the size of you and me. It looked like some kind of oversized wolf. There were plenty of bones in its lair, I would guess that we aren’t the first ones that’s been down here. Which means it’s gotten a taste for us…
-
+					I’ve only ever seen it once while it was sleeping… It was dark but I could see it’s outline. He’s about twice the size of you and me. It looked like some kind of oversized wolf. There were plenty of bones in its lair, I would guess that we aren’t the first ones that’s been down here. Which means it’s gotten a taste for us…
 				</p>
 			<hr>
 			<p> <b>What do you do?</b> </p>
 			<hr>
 		
-
-			<div class="buts">
-			
-					<button><th><a class="buttons" href="https://sambolton8.github.io/06how.html"> "How can we get past it?"</a></th></button>
-			
+			<!-- Displays the buttons. -->
+			<div class="buts">	
+					<button><th><a class="buttons" href="https://sambolton8.github.io/06how.html"> "How can we get past it?"</a></th></button>	
 			</div>
 			
+			<!-- Displays the health counter alongside a health icon. -->
 			<div class="stats">
 				<img src="images/health.png" id="healthIcon"><p id="health"></p>
-<!--				<img src="images/gold.png" id="goldIcon"><p id="gold"></p> -->
 			</div>
 			
+			
+			<!-- Calls the functions that allow the player to view their current health and sword. The gameOver() function is also called to stop the game if the player's health drops below 0. -->	
 			<script>
 			gameOver();
-			document.getElementById("health").innerHTML = "Health: " + healthStat() + "/10";
-			
-					
+			document.getElementById("health").innerHTML = "Health: " + healthStat() + "/10";				
 
 		</script>
 	</body>

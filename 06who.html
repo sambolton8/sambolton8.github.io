@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 	<head>
+	
+		<!-- Links the Javascript and css stylesheet. -->
+		<!-- Adds a small coin icon to the browser tab. -->
 		<link rel="stylesheet" href="css.css">
 		<script src="js.js"></script>
 		<link rel="icon" href="images/gold.png">
@@ -9,19 +12,22 @@
 	</head>
 	<body >
 		<br> <hr>
+		
+			<!-- Displays the previous action text at the top. -->
 			<p id="previousAction">
 				You ask the strange man who he is...
 			</p>
 			
+				<!-- Main body of text -->
 				<p>
 				I have been living in these caves for almost a year now. Ever since the lighthouse collapsed in the dreadful storm we had I’ve had no other place to go to shelter from the wind and rain. I fish and I survive but I cannot exit the other side of these caves…
-
 				</p>
+				
 			<hr>
 			<p> <b>What do you do?</b> </p>
 			<hr>
 		
-
+			<!-- Displays the buttons. -->
 			<div class="buts">
 			
 					<button><th><a class="buttons" onClick= "spareFish();" href="07spareFood.html"> "Do you have any spare food?"</a></th></button>
@@ -30,16 +36,15 @@
 			
 			</div>
 			
+			<!-- Displays the health counter alongside a health icon. -->
 			<div class="stats">
 				<img src="images/health.png" id="healthIcon"><p id="health"></p>
-<!--				<img src="images/gold.png" id="goldIcon"><p id="gold"></p> -->
 			</div>
 			
+			<!-- Calls the functions that allow the player to view their current health and sword. The gameOver() function is also called to stop the game if the player's health drops below 0. -->	
 			<script>
 			gameOver();
-			document.getElementById("health").innerHTML = "Health: " + healthStat() + "/10";
-			
-					
+			document.getElementById("health").innerHTML = "Health: " + healthStat() + "/10";			
 
 		</script>
 	</body>
